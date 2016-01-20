@@ -1,0 +1,62 @@
+<ng-include class="main-head" src="'tpl/layout/main-head.tpl.html'"></ng-include>
+
+<div class="row" class="products-list">
+	<div class="col-sm-12 col-lg-8 col-md-9 col-md-push-2">
+
+		<div id="results">
+
+			<!-- product -->
+
+	        <div ng-repeat="item in layout.pagination.items" class="product panel panel-default">
+	            <div class="panel-body">
+
+		        	<div class="col-sm-9 col-sm-push-3">
+			        	<div class="title"><a href="#/product/{{ item.id }}">{{ item.title }}</a></div>
+			        	<div class='subtitle'>{{ item.subtitle }}</div>
+			        	<div class="price">${{ item.price }}</div>
+		                <div class="more-info">
+				           	<div class='seller hidden-xs'><strong>Started: </strong><span class="value">{{ item.starts }}</span></div>
+				           	<div class='date-start hidden-xs'><strong>End: </strong><span class="value">{{ item.ends }}</span></div>
+				           	<div class='seller '><strong>Seller: </strong><span class="value"><a href="#/user/{{ item.seller.id }}">{{ item.seller.username || 'you' }}</a></span></div>
+			           	</div>
+		        	</div>
+					<div class="col-sm-3 col-sm-pull-9 hidden-xs photoCont">
+						<a href="#/product/{{ item.id }}">
+		        			<img ng-src="{{ layout.getProductImage(item.id) }}" class="img-responsive photo" alt="Responsive image">
+		        		</a>
+		        	</div>
+
+	           		<div class="actions" ng-show="auth.isLogged()">
+<!--
+	           			<button type="button" class="btn btn-default">
+	                    	<span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+	                    	</span>
+	                	</button>
+-->
+						<a type="button" class="btn btn-favourite btn-default" ng-class="{'btn-favourite-active' : item.favourite }" ng-click="layout.toggleFav(item)">
+	                    	<span class="glyphicon glyphicon-heart-empty" aria-hidden="true">
+	                    	</span>
+	                	</a>
+           				<a href="#/product/{{item.id}}/edit" ng-show="item.seller_id == auth.getUser().id" class="btn btn-default">
+	                    	<span class="glyphicon glyphicon-pencil" aria-hidden="true">
+	                    	</span>
+	                	</a>
+	                	<a ng-show="item.seller_id == auth.getUser().id" class="btn btn-default btn-isActive" type="button" ng-class="{'btn-off' : !item.is_active}"
+	                	 ng-click="layout.toggleActive(item)">
+	                    	<span class="glyphicon glyphicon-off" aria-hidden="true">
+	                    	</span>
+	                	</a>         	               		
+	                </div>		        	
+	            </div>
+	        </div>
+
+	        <!-- end product -->
+
+	    </div>
+
+	    <!-- end results -->
+
+		<uib-pagination direction-links="false" boundary-links="true" total-items="layout.pagination.totalItems" ng-model="layout.pagination.currentPage" ></uib-pagination>
+
+	</div>
+</div>
