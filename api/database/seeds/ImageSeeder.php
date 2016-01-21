@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 class ImageSeeder extends Seeder
 {
 
-    protected $imageGeneratorUrl = 'http://loremflickr.com/149/149/instrument';
+    protected $imageGeneratorUrl = 'http://loremflickr.com/149/149/paradise';
 
     protected $destination = '/imgs/products';
     /**

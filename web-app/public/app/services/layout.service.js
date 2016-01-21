@@ -45,7 +45,7 @@ angular.module('app').factory('layout', function($document, auth, $location, Fla
 
     function setDefaults()
     {
-        Object.assign(this, defaults);
+        angular.copy(defaults, this);
     }
 
     function init(config)

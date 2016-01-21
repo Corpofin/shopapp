@@ -4,7 +4,7 @@ made with AngularJs and Laravel
 
 by Sebastian Albisu
 
-video: [see demo in youtube](https://www.youtube.com/watch?v=Td4GsGZ7ss0)
+video: [see demo in youtube](https://youtu.be/RzjH077f1Ok)
 
 
  ## to-do:

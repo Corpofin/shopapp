@@ -11,16 +11,16 @@ a:hover {color: #594D6B; text-decoration: none}
 common classes 
 -------------------------------*/
 
-.breadcrumb {background: rgba(61, 11, 81, 0.66); display:inline-block;}
+.breadcrumb {background: rgba(61, 33, 83, 0.73); display:inline-block;}
 .breadcrumb a { color: #fff;}
 .breadcrumb li { color: #fff;}
 
-.section-title {margin-top: -11px; padding: 15px; border-radius: 6px; background: rgba(61, 11, 81, 0.66); color: #F9FFCF; /* margin: 15px; */ margin-bottom: 38px;}
+.section-title {margin-top: -11px; padding: 15px; border-radius: 6px; background: rgba(61, 33, 83, 0.73); color:#F7F7F7; /* margin: 15px; */ margin-bottom: 38px;}
 
 .section-title h1 {margin: 0;}
 .section-title .sort {float: right}
 
-.panel {background-color: rgb(249, 255, 207);box-shadow: 0px 0px 14px rgb(48, 57, 88);border-color: rgb(56, 43, 74);}
+.panel {background-color: #F7F7F7;box-shadow: 0px 0px 14px rgb(48, 57, 88);border-color: rgb(56, 43, 74);}
 .panel-heading {font-style: italic;}
 .panel-body {padding: 23px 15px;}
 .panel hr.separator {border-top:1px dashed #7A43FF;}
@@ -45,17 +45,17 @@ common classes
 .ui-datepicker {z-index: 99 !important}
 
 .dropdown-menu { background-color: rgba(59, 24, 86, 0.86); background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(187, 171, 255, 0.74); border-radius: 4px; box-shadow: 0 6px 12px rgba(49, 35, 93, 0.83);}
-.dropdown-menu > li > a {color:#FFF5D0;}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {    background-image: linear-gradient(to bottom, #FFF5B5 0%, #FFF5D0 100%);}
+.dropdown-menu > li > a { color: #FFFFFF;}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {    background: #F7F7F7;}
 .dropdown-menu .divider {background-color: rgba(184, 163, 215, 0.74)}
 
-header .dropdown-menu { background-color: rgba(114, 46, 88, 0.96); background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(255, 146, 146, 0.74); border-radius: 4px; box-shadow: 0 6px 12px rgba(137, 53, 112, 0.93);}
-header .dropdown-menu > li > a {color:#FFF5D0;}
-header .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {    background-image: linear-gradient(to bottom, #FFF5B5 0%, #FFF5D0 100%);}
-header .dropdown-menu .divider {background-color: #FFC6C6;}
+header .dropdown-menu { background-color: rgba(114, 46, 88, 0.96); background-clip: padding-box; border: 1px solid rgb(225, 148, 162); border-radius: 4px; box-shadow: 0 6px 12px rgba(137, 53, 112, 0.93);}
+header .dropdown-menu > li > a {color:#F7F7F7;}
+header .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {    background: #F7F7F7}
+header .dropdown-menu .divider {background-color: rgb(225, 148, 162);}
 
-header .btn-search {color: #FFF5B1; border-color: #782262; background-image: linear-gradient(to bottom, #AB5A81 0%, #EBA0A9 100%);}
-header .btn-search:hover {color:#FFF5B1;}
+header .btn-search {color:#F7F7F7; border-color: #782262; background-image: linear-gradient(to bottom, #AB5A81 0%, #EBA0A9 100%);}
+header .btn-search:hover {color:#F7F7F7;}
 
 .product.ng-enter {-webkit-transition: 1s; transition: 1s; position:relative; left:200px; opacity: 0; }
 .product.ng-enter-active {opacity: 1; left:0px; }
@@ -64,13 +64,13 @@ header .btn-search:hover {color:#FFF5B1;}
 
 .product .title {font-size: 36px;margin-top: 11px; }
 .product .subtitle {font-style: italic; margin-bottom:15px;}
-.product .price {    width: 179px; text-align: right;padding: 17px; border-radius: 36px 0 0 36px; position:absolute; top: -24px ; left: -373px; font-size: 33px;     color: #FFF39B; background: rgba(70, 21, 93, 0.8);}
+.product .price {    width: 179px; text-align: right;padding: 17px; border-radius: 36px 0 0 36px; position:absolute; top: -24px ; left: -373px; font-size: 33px;     color:#F7F7F7; background: rgba(61, 33, 83, 0.73);}
 .product .fav {position:absolute; right: -4px ;top: -24px;}
 .product .fav:hover {top: -23px;}
 .product .fav button {border-radius: 0px 0px 4px 4px;}
 
 .product .photoCont {margin-top:12px;}
-.product .photo {width: 100%;box-shadow: -6px 6px 10px #C2C5A8; border: 1px solid #646464;}
+.product .photo {width: 100%;box-shadow: -6px 6px 10px #C5C5C5; border: 1px solid #646464;}
 
 .product .actions {position: absolute; right: 5px; top: 3px;}
 .product .actions .btn-favourite:hover, .btn-favourite-active {color: #ff0000; background: #FDDBDB; border:1px solid #FFA0A0}
@@ -99,14 +99,13 @@ body > .container {border: 1px solid #1A1B25;; border-top:0; background: rgba(12
 header { padding:22px 0; background-image: linear-gradient(to bottom, rgb(255, 181, 181) 0%, #772161 100%); border-bottom:1px solid #1A1B25; }
 header div {}
 header h1 {margin:0; float:left;}
-header .logo a { font-family: 'Comfortaa', cursive; text-shadow: 0px 0px 15px rgb(115, 24, 90); color: rgb(255, 225, 179); line-height:44px; vertical-align: bottom; }
+header .logo a { font-family: 'Comfortaa', cursive; text-shadow: 0px 0px 15px rgb(115, 24, 90); color:rgb(255, 233, 199); line-height:44px; vertical-align: bottom; }
 header .logo a:hover {text-decoration: none;}
 header .search {}
-header #search { background: rgb(255, 247, 222);box-shadow: box-shadow: 0px 0px 15px #FF82BF;}
+header #search { background: #F7F7F7;box-shadow: box-shadow: 0px 0px 15px #FF82BF;}
 header .search button { margin-left:-30px }
 header .menu {position:relative; z-index: 9; text-align:right}
 header .menu ul {text-align:left}
-
 
 /* ---------------------------- 
 all pages 
