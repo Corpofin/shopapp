@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://api.shopapp.local/' . env('API'),
+    'url' => 'http://shopapp.local/' . env('API'),
 
     /*
     |--------------------------------------------------------------------------
