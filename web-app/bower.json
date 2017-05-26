@@ -18,6 +18,8 @@
     "blueimp-gallery-with-desc": "2.16.x",
     "tinymce-dist" : "4.3.2",
     "tag-it" : "https://github.com/aehlke/tag-it.git#6ccd2de95e",
-    "angular-ui-bootstrap-bower" : "1.0.x"
+    "angular-ui-bootstrap-bower" : "1.0.x",
+    "angular-scroll" : "1.x"
+
   }
 }
